@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
-        <css_variables/>
+        <css_variables>$brand-primary:#1F8476;
+$body-bg:#d8ecd9;
+$state-success-text:#1e4335;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#ffffff;
+$text-color:#2e2e2e;
+$sp-logo-margin-y:2px;
+$navbar-inverse-link-hover-color:#ffffff;
+$panel-bg:#fff;
+$brand-success:#48C891;
+$navbar-inverse-bg:#000000;
+$brand-warning:#DFD139;
+$brand-danger:#C83C36;
+$sp-tagline-color:#ffffff;
+$navbar-inverse-link-color:#A7B0B2;
+$brand-info:#6ABECF;
+$link-color:#1F8476;
+$sp-logo-margin-x:15px;
+$btn-default-bg:#fff;
+$text-muted:#666666;
+</css_variables>
         <default>false</default>
         <enable_ais>false</enable_ais>
         <hide_portal_name>false</hide_portal_name>
@@ -18,21 +38,21 @@
         <search_application/>
         <search_results_configuration/>
         <sp_chat_queue/>
-        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sp_rectangle_menu display_value="Pet Adoption Header Menu">ee7f86e42f857010df083996f699b66a</sp_rectangle_menu>
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-06-03 15:38:56</sys_created_on>
         <sys_id>4f89ef45076030108f37f66c7c1ed066</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>Pet Adoption</sys_name>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>PAWPPOINTMENT</sys_name>
         <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
         <sys_update_name>sp_portal_4f89ef45076030108f37f66c7c1ed066</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-26 08:48:48</sys_updated_on>
+        <sys_updated_on>2021-06-26 20:35:11</sys_updated_on>
         <theme display_value="La Jolla">a7a6e78277002300a6e592718a10617a</theme>
-        <title>Pet Adoption</title>
+        <title>PAWPPOINTMENT</title>
         <ts_index_group/>
         <url_suffix>petadoption</url_suffix>
         <user_registration_config/>

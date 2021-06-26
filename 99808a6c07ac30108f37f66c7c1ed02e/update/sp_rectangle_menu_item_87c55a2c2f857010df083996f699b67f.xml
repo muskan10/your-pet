@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>user-circle-o</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>User/ Pet Registration</label>
+        <order>300</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="sc_category">07261a2147132100ba13a5554ee49092</sp_page>
+        <sp_rectangle_menu display_value="Pet Adoption Header Menu">ee7f86e42f857010df083996f699b66a</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-26 16:47:41</sys_created_on>
+        <sys_id>87c55a2c2f857010df083996f699b67f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>User/ Pet Registration</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_87c55a2c2f857010df083996f699b67f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-26 17:06:02</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=87c55a2c2f857010df083996f699b67f"/>
+</record_update>

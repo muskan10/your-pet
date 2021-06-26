@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Pet Clinics" max_length="40" name="x_563993_your_pet_pet_clinics" type="collection">
+        <element label="Address" max_length="100" name="address" type="string"/>
+        <element label="Contact" max_length="15" name="contact" type="string"/>
+        <element label="Fees" max_length="40" name="fees" type="integer"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

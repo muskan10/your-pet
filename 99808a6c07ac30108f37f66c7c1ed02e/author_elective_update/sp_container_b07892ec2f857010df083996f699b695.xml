@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Things to know before adopting a pet - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="things_to_know_before_adopting_a_pet">0c171a6c2f857010df083996f699b666</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-26 16:57:43</sys_created_on>
+        <sys_id>b07892ec2f857010df083996f699b695</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Things to know before adopting a pet - Container 2</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sp_container_b07892ec2f857010df083996f699b695</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-26 16:57:43</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</application>
+        <file_path/>
+        <instance_id>573b862cdb0a9fcc4c1ff70fbf9619ee</instance_id>
+        <instance_name>dev58847</instance_name>
+        <name>sp_container_b07892ec2f857010df083996f699b695</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Things to know before adopting a pet - Container 2</name><order>2</order><sp_page display_value="things_to_know_before_adopting_a_pet">0c171a6c2f857010df083996f699b666</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-26 16:57:43</sys_created_on><sys_id>b07892ec2f857010df083996f699b695</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Things to know before adopting a pet - Container 2</sys_name><sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package><sys_policy/><sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope><sys_update_name>sp_container_b07892ec2f857010df083996f699b695</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-26 16:57:43</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>602051535</payload_hash>
+        <record_name>Things to know before adopting a pet - Container 2</record_name>
+        <reverted_from/>
+        <source>2e325d9c2f853010df083996f699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-26 16:57:43</sys_created_on>
+        <sys_id>b87892ec2f857010df083996f699b696</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a494172cd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-26 16:57:43</sys_updated_on>
+        <type>Container</type>
+        <update_guid>f07892ec80857010e22d27a0ef9e0496</update_guid>
+        <update_guid_history>f07892ec80857010e22d27a0ef9e0496:602051535</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Things to know before adopting a pet - Container 2">73781eac2f857010df083996f699b69f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-26 16:57:56</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>22218f694b4e44e2b547409242e79244</sys_id>
+        <sys_metadata>b07892ec2f857010df083996f699b695</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Things to know before adopting a pet - Container 2</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_scope_delete display_value="">b5993c0a2da347cd93d63165f03666e9</sys_scope_delete>
+        <sys_update_name>sp_container_b07892ec2f857010df083996f699b695</sys_update_name>
+        <sys_update_version display_value="sp_container_b07892ec2f857010df083996f699b695">b87892ec2f857010df083996f699b696</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-26 16:57:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
