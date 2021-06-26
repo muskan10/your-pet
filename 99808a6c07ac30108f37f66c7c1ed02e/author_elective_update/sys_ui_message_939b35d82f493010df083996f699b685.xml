@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="DELETE">
+        <application>Virtual Agent</application>
+        <key>How can PAWPPOINTMENT help you?</key>
+        <language>en</language>
+        <message>How can PAWPPOINTMENT help you?</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:13:16</sys_created_on>
+        <sys_id>939b35d82f493010df083996f699b685</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How can PAWPPOINTMENT help you?</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sys_ui_message_939b35d82f493010df083996f699b685</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:13:16</sys_updated_on>
+    </sys_ui_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</application>
+        <file_path/>
+        <instance_id>573b862cdb0a9fcc4c1ff70fbf9619ee</instance_id>
+        <instance_name>dev58847</instance_name>
+        <name>sys_ui_message_939b35d82f493010df083996f699b685</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application>Virtual Agent</application><key>How can PAWPPOINTMENT help you?</key><language>en</language><message>How can PAWPPOINTMENT help you?</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-25 20:13:16</sys_created_on><sys_id>939b35d82f493010df083996f699b685</sys_id><sys_mod_count>0</sys_mod_count><sys_name>How can PAWPPOINTMENT help you?</sys_name><sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package><sys_policy/><sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope><sys_update_name>sys_ui_message_939b35d82f493010df083996f699b685</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-25 20:13:16</sys_updated_on></sys_ui_message></record_update>]]></payload>
+        <payload_hash>1328136</payload_hash>
+        <record_name>How can PAWPPOINTMENT help you?</record_name>
+        <reverted_from/>
+        <source>2e325d9c2f853010df083996f699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:13:16</sys_created_on>
+        <sys_id>539b35d82f493010df083996f699b687</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a44ce1c700000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:13:16</sys_updated_on>
+        <type>Message</type>
+        <update_guid>9b9b35d8dc4930108aefa5133b5cc286</update_guid>
+        <update_guid_history>9b9b35d8dc4930108aefa5133b5cc286:1328136</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:36:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_message">sys_ui_message</sys_db_object>
+        <sys_id>0038c9a52bf34bb0801022daeef9b201</sys_id>
+        <sys_metadata>939b35d82f493010df083996f699b685</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How can PAWPPOINTMENT help you?</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_scope_delete display_value="">b5993c0a2da347cd93d63165f03666e9</sys_scope_delete>
+        <sys_update_name>sys_ui_message_939b35d82f493010df083996f699b685</sys_update_name>
+        <sys_update_version display_value="sys_ui_message_939b35d82f493010df083996f699b685">539b35d82f493010df083996f699b687</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:36:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

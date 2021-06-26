@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "9219edb503a7492cadd3d0bfe0c4fdd3": {
+          "id": "9219edb503a7492cadd3d0bfe0c4fdd3",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Wohoo! Another pet lover! How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "d7a3d686b048422f892f9de77c0be97b": {
+          "id": "d7a3d686b048422f892f9de77c0be97b",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "aac3c39ad45c46cea41e5fe7b7bca211": {
+          "id": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "stepType": "TextOutput",
+          "name": "Choose from the options!",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Choose from the options!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7ca4406f59344826816e3e47aa25c017": {
+          "id": "7ca4406f59344826816e3e47aa25c017",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "60fd6880132143f5a27853823f52a825": {
+          "id": "60fd6880132143f5a27853823f52a825",
+          "stepType": "LookupRecord",
+          "name": "Record Display",
+          "condition": {
+            "mode": "glide_query",
+            "value": "status=active"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "c8d288390d3c400aa40045a7f1eb60ab"
+        },
+        "0fa5a6f51f454c239a587de7a686fa18": {
+          "id": "0fa5a6f51f454c239a587de7a686fa18",
+          "stepType": "TextOutput",
+          "name": "Lookup",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Lookup"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "8102d0b4a0c7425682848ae0fdb100ec",
+          "edgeType": "Edge",
+          "source": "9219edb503a7492cadd3d0bfe0c4fdd3",
+          "target": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6114d702520e46d39a067f0ef2f61de7",
+          "edgeType": "Edge",
+          "source": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "target": "7ca4406f59344826816e3e47aa25c017",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a07a53f3030468fa7f9af5605bd6a70",
+          "edgeType": "Branch",
+          "source": "7ca4406f59344826816e3e47aa25c017",
+          "target": "d7a3d686b048422f892f9de77c0be97b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "",
+            "mode": "query"
+          },
+          "label": "Registration"
+        },
+        {
+          "id": "8bbc38c0d3d54ebba5c139c2ccff79a7",
+          "edgeType": "Edge",
+          "source": "60fd6880132143f5a27853823f52a825",
+          "target": "d7a3d686b048422f892f9de77c0be97b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2134f7859c8d497196916121fa5c8612",
+          "edgeType": "Branch",
+          "source": "7ca4406f59344826816e3e47aa25c017",
+          "target": "0fa5a6f51f454c239a587de7a686fa18",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "Lookup"
+        },
+        {
+          "id": "6b7b5e717a2f4f1f84f8ca9e52c97e54",
+          "edgeType": "Edge",
+          "source": "0fa5a6f51f454c239a587de7a686fa18",
+          "target": "60fd6880132143f5a27853823f52a825",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "c8d288390d3c400aa40045a7f1eb60ab": {
+      "id": "c8d288390d3c400aa40045a7f1eb60ab",
+      "name": "record_display",
+      "label": "Record Display",
+      "varType": "reference",
+      "table": "x_563993_your_pet_pet",
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Virtual Agent</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Virtual Agent</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:19:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>70fc7d182f493010df083996f699b6da</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Virtual Agent</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sys_cb_topic_70fc7d182f493010df083996f699b6da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:24:23</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=70fc7d182f493010df083996f699b6da"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</application>
+        <file_path/>
+        <instance_id>573b862cdb0a9fcc4c1ff70fbf9619ee</instance_id>
+        <instance_name>dev58847</instance_name>
+        <name>sys_cb_topic_70fc7d182f493010df083996f699b6da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><auto_resolution_enabled>false</auto_resolution_enabled><category/><channels/><connect_queue/><description/><flexible_conversation_switching>false</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "9219edb503a7492cadd3d0bfe0c4fdd3": {
+          "id": "9219edb503a7492cadd3d0bfe0c4fdd3",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Wohoo! Another pet lover! How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "d7a3d686b048422f892f9de77c0be97b": {
+          "id": "d7a3d686b048422f892f9de77c0be97b",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "aac3c39ad45c46cea41e5fe7b7bca211": {
+          "id": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "stepType": "TextOutput",
+          "name": "Choose from the options!",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Choose from the options!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "7ca4406f59344826816e3e47aa25c017": {
+          "id": "7ca4406f59344826816e3e47aa25c017",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "60fd6880132143f5a27853823f52a825": {
+          "id": "60fd6880132143f5a27853823f52a825",
+          "stepType": "LookupRecord",
+          "name": "Record Display",
+          "condition": {
+            "mode": "glide_query",
+            "value": "status=active"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "c8d288390d3c400aa40045a7f1eb60ab"
+        },
+        "0fa5a6f51f454c239a587de7a686fa18": {
+          "id": "0fa5a6f51f454c239a587de7a686fa18",
+          "stepType": "TextOutput",
+          "name": "Lookup",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Lookup"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "8102d0b4a0c7425682848ae0fdb100ec",
+          "edgeType": "Edge",
+          "source": "9219edb503a7492cadd3d0bfe0c4fdd3",
+          "target": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "6114d702520e46d39a067f0ef2f61de7",
+          "edgeType": "Edge",
+          "source": "aac3c39ad45c46cea41e5fe7b7bca211",
+          "target": "7ca4406f59344826816e3e47aa25c017",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a07a53f3030468fa7f9af5605bd6a70",
+          "edgeType": "Branch",
+          "source": "7ca4406f59344826816e3e47aa25c017",
+          "target": "d7a3d686b048422f892f9de77c0be97b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "",
+            "mode": "query"
+          },
+          "label": "Registration"
+        },
+        {
+          "id": "8bbc38c0d3d54ebba5c139c2ccff79a7",
+          "edgeType": "Edge",
+          "source": "60fd6880132143f5a27853823f52a825",
+          "target": "d7a3d686b048422f892f9de77c0be97b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "2134f7859c8d497196916121fa5c8612",
+          "edgeType": "Branch",
+          "source": "7ca4406f59344826816e3e47aa25c017",
+          "target": "0fa5a6f51f454c239a587de7a686fa18",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "Lookup"
+        },
+        {
+          "id": "6b7b5e717a2f4f1f84f8ca9e52c97e54",
+          "edgeType": "Edge",
+          "source": "0fa5a6f51f454c239a587de7a686fa18",
+          "target": "60fd6880132143f5a27853823f52a825",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "c8d288390d3c400aa40045a7f1eb60ab": {
+      "id": "c8d288390d3c400aa40045a7f1eb60ab",
+      "name": "record_display",
+      "label": "Record Display",
+      "varType": "reference",
+      "table": "x_563993_your_pet_pet",
+      "category": "vaInputs"
+    }
+  }
+}</graph><key_phrases>Virtual Agent</key_phrases><library>false</library><live_agent>false</live_agent><name>Virtual Agent</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><roles/><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-25 20:19:06</sys_created_on><sys_domain>global</sys_domain><sys_id>70fc7d182f493010df083996f699b6da</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Virtual Agent</sys_name><sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package><sys_policy/><sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope><sys_update_name>sys_cb_topic_70fc7d182f493010df083996f699b6da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-25 20:24:23</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=70fc7d182f493010df083996f699b6da"/></record_update>]]></payload>
+        <payload_hash>-2102128149</payload_hash>
+        <record_name>Virtual Agent</record_name>
+        <reverted_from/>
+        <source>2e325d9c2f853010df083996f699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:24:23</sys_created_on>
+        <sys_id>522e715c2f493010df083996f699b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a44d84c830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:24:23</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>9a2e715c74493010cbbc08856d94f252</update_guid>
+        <update_guid_history>9a2e715c74493010cbbc08856d94f252:-2102128149,5add715c1c49301004861aaa9080c7b3:1577137446,b0fc715ccf4930108788da90d9674cae:-1041566337</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:35:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>0e83b2fa84294e808378474228744400</sys_id>
+        <sys_metadata>70fc7d182f493010df083996f699b6da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Virtual Agent</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_scope_delete display_value="">b5993c0a2da347cd93d63165f03666e9</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_70fc7d182f493010df083996f699b6da</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_70fc7d182f493010df083996f699b6da">522e715c2f493010df083996f699b653</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:35:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Adopting User" max_length="40" name="x_563993_your_pet_adopting_user" sizeclass="1" type="collection">
+    <element attributes="live_feed=true" label="Adopting User" max_length="40" name="x_563993_your_pet_adopting_user" sizeclass="5" type="collection">
         <element label="Address" max_length="100" name="address" type="string"/>
         <element label="Age" max_length="40" name="age" type="integer"/>
         <element label="Allowed" max_length="40" name="allowed" type="boolean"/>
@@ -7,6 +7,7 @@
         <element label="Contact Number" max_length="40" name="contact_number" type="phone_number_e164"/>
         <element label="Email id" mandatory="true" max_length="100" name="email_id" type="string"/>
         <element label="Name" max_length="50" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Schedule Meeting?" max_length="40" name="schedule_meeting" type="boolean"/>
         <element label="Select from available pets" max_length="32" name="select_from_available_pets" reference="x_563993_your_pet_pet" reference_qual="status=active^EQ" reference_qual_condition="status=active^EQ" type="reference"/>
         <element choice="3" label="Status" max_length="40" name="status" type="choice">
@@ -15,8 +16,12 @@
                 <element inactive_on_update="false" label="Active" sequence="1" value="active"/>
             </choice>
         </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <index name="index">
             <element name="select_from_available_pets"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
         </index>
     </element>
 </database>

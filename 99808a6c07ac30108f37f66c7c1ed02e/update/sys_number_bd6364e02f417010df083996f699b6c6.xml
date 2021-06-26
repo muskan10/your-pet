@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_563993_your_pet_adopting_user">x_563993_your_pet_adopting_user</category>
+        <maximum_digits>4</maximum_digits>
+        <number>1000</number>
+        <prefix>ADO</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-26 08:26:20</sys_created_on>
+        <sys_id>bd6364e02f417010df083996f699b6c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ADO</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sys_number_bd6364e02f417010df083996f699b6c6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-26 08:26:20</sys_updated_on>
+    </sys_number>
+</record_update>

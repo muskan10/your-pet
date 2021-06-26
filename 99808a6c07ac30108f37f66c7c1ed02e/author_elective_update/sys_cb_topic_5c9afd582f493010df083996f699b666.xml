@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <auto_resolution_enabled>false</auto_resolution_enabled>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description/>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3532865f51fc48e7b915f877397fbf47": {
+          "id": "3532865f51fc48e7b915f877397fbf47",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Wohoo! Another pet lover! Welcome to PAWPPOINTMENT. "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "6e74d552a9694008a305bc63c58648cd": {
+          "id": "6e74d552a9694008a305bc63c58648cd",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "341242835d284f4498693a45d345ccec": {
+          "id": "341242835d284f4498693a45d345ccec",
+          "stepType": "TextOutput",
+          "name": "How can I help you?",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "8d87bf080cef4791bf5d605b232b8704": {
+          "id": "8d87bf080cef4791bf5d605b232b8704",
+          "stepType": "Prompt",
+          "name": "Can I see the available pets?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Can I see the available pets?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "3411369c516e499f8012fb83776fb7a2",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "ab0a4dbcd2304688a13989f8974440d8": {
+          "id": "ab0a4dbcd2304688a13989f8974440d8",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "be3bd6c77bd2448cb3ea2d965ae43a76": {
+          "id": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "stepType": "LookupRecord",
+          "name": "Yes sure why not!",
+          "condition": {
+            "mode": "glide_query",
+            "value": "status=active"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "8180283ad2ae4706988fea6ee7200a47"
+        },
+        "910f20ad2c6343158b03962e4dd9dd95": {
+          "id": "910f20ad2c6343158b03962e4dd9dd95",
+          "stepType": "Prompt",
+          "name": "Thanks",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "cd4e56225d544697b33f5025d3a86c75",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "ebe7cbc7ba434140a8aebd6fd86ddfeb": {
+          "id": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "stepType": "TextOutput",
+          "name": "Can I see the available pets?",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Can I see the available pets?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "864bac59dc04406a9d11ac3466ff23f4",
+          "edgeType": "Edge",
+          "source": "3532865f51fc48e7b915f877397fbf47",
+          "target": "341242835d284f4498693a45d345ccec",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e2d3b97e65bc48ad85d1fa36d27d64ea",
+          "edgeType": "Edge",
+          "source": "341242835d284f4498693a45d345ccec",
+          "target": "ab0a4dbcd2304688a13989f8974440d8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fecb6597031c432bad192f014813a653",
+          "edgeType": "Branch",
+          "source": "ab0a4dbcd2304688a13989f8974440d8",
+          "target": "8d87bf080cef4791bf5d605b232b8704",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.can_i_see_the_available_pets_ANYTHING",
+            "mode": "query"
+          },
+          "label": "Can I see the available pets"
+        },
+        {
+          "id": "e1850c6067e446bd988443f8456c1b8e",
+          "edgeType": "Edge",
+          "source": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "target": "910f20ad2c6343158b03962e4dd9dd95",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "56d6127de119496f98b845a44d9fd2e1",
+          "edgeType": "Edge",
+          "source": "910f20ad2c6343158b03962e4dd9dd95",
+          "target": "6e74d552a9694008a305bc63c58648cd",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a3e95820a23404d8c344234f65c4a76",
+          "edgeType": "Edge",
+          "source": "8d87bf080cef4791bf5d605b232b8704",
+          "target": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e6ad3ba343e040f9b0f2bde045dda66d",
+          "edgeType": "Edge",
+          "source": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "target": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "de4a89eac43d46ba9dd5b6491555c75e",
+          "edgeType": "Branch",
+          "source": "ab0a4dbcd2304688a13989f8974440d8",
+          "target": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "Can I see the available pets?"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "3411369c516e499f8012fb83776fb7a2": {
+      "id": "3411369c516e499f8012fb83776fb7a2",
+      "name": "can_i_see_the_available_pets_",
+      "label": "Can I See The Available Pets?",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyNDY1MTgzNjM5OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "8180283ad2ae4706988fea6ee7200a47": {
+      "id": "8180283ad2ae4706988fea6ee7200a47",
+      "name": "yes_sure_why_not_",
+      "label": "Yes Sure Why Not!",
+      "varType": "reference",
+      "table": "x_563993_your_pet_pet",
+      "category": "vaInputs"
+    },
+    "cd4e56225d544697b33f5025d3a86c75": {
+      "id": "cd4e56225d544697b33f5025d3a86c75",
+      "name": "thanks",
+      "label": "Thanks",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyNDY1MTk2NjQ0OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph>
+        <key_phrases>How can PAWPPOINTMENT help you?</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>How can PAWPPOINTMENT help you?</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:08:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5c9afd582f493010df083996f699b666</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>How can PAWPPOINTMENT help you?</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>sys_cb_topic_5c9afd582f493010df083996f699b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:16:39</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=5c9afd582f493010df083996f699b666"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</application>
+        <file_path/>
+        <instance_id>573b862cdb0a9fcc4c1ff70fbf9619ee</instance_id>
+        <instance_name>dev58847</instance_name>
+        <name>sys_cb_topic_5c9afd582f493010df083996f699b666</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><auto_resolution_enabled>false</auto_resolution_enabled><category/><channels/><connect_queue/><description/><flexible_conversation_switching>true</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.31",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "3532865f51fc48e7b915f877397fbf47": {
+          "id": "3532865f51fc48e7b915f877397fbf47",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Wohoo! Another pet lover! Welcome to PAWPPOINTMENT. "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "6e74d552a9694008a305bc63c58648cd": {
+          "id": "6e74d552a9694008a305bc63c58648cd",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "341242835d284f4498693a45d345ccec": {
+          "id": "341242835d284f4498693a45d345ccec",
+          "stepType": "TextOutput",
+          "name": "How can I help you?",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How can I help you?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "8d87bf080cef4791bf5d605b232b8704": {
+          "id": "8d87bf080cef4791bf5d605b232b8704",
+          "stepType": "Prompt",
+          "name": "Can I see the available pets?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Can I see the available pets?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "3411369c516e499f8012fb83776fb7a2",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "ab0a4dbcd2304688a13989f8974440d8": {
+          "id": "ab0a4dbcd2304688a13989f8974440d8",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "be3bd6c77bd2448cb3ea2d965ae43a76": {
+          "id": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "stepType": "LookupRecord",
+          "name": "Yes sure why not!",
+          "condition": {
+            "mode": "glide_query",
+            "value": "status=active"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "variableId": "8180283ad2ae4706988fea6ee7200a47"
+        },
+        "910f20ad2c6343158b03962e4dd9dd95": {
+          "id": "910f20ad2c6343158b03962e4dd9dd95",
+          "stepType": "Prompt",
+          "name": "Thanks",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thanks"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "cd4e56225d544697b33f5025d3a86c75",
+          "inputType": {
+            "format": "Text",
+            "script": ""
+          }
+        },
+        "ebe7cbc7ba434140a8aebd6fd86ddfeb": {
+          "id": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "stepType": "TextOutput",
+          "name": "Can I see the available pets?",
+          "secure": false,
+          "value": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Can I see the available pets?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "864bac59dc04406a9d11ac3466ff23f4",
+          "edgeType": "Edge",
+          "source": "3532865f51fc48e7b915f877397fbf47",
+          "target": "341242835d284f4498693a45d345ccec",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e2d3b97e65bc48ad85d1fa36d27d64ea",
+          "edgeType": "Edge",
+          "source": "341242835d284f4498693a45d345ccec",
+          "target": "ab0a4dbcd2304688a13989f8974440d8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "fecb6597031c432bad192f014813a653",
+          "edgeType": "Branch",
+          "source": "ab0a4dbcd2304688a13989f8974440d8",
+          "target": "8d87bf080cef4791bf5d605b232b8704",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.can_i_see_the_available_pets_ANYTHING",
+            "mode": "query"
+          },
+          "label": "Can I see the available pets"
+        },
+        {
+          "id": "e1850c6067e446bd988443f8456c1b8e",
+          "edgeType": "Edge",
+          "source": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "target": "910f20ad2c6343158b03962e4dd9dd95",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "56d6127de119496f98b845a44d9fd2e1",
+          "edgeType": "Edge",
+          "source": "910f20ad2c6343158b03962e4dd9dd95",
+          "target": "6e74d552a9694008a305bc63c58648cd",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3a3e95820a23404d8c344234f65c4a76",
+          "edgeType": "Edge",
+          "source": "8d87bf080cef4791bf5d605b232b8704",
+          "target": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e6ad3ba343e040f9b0f2bde045dda66d",
+          "edgeType": "Edge",
+          "source": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "target": "be3bd6c77bd2448cb3ea2d965ae43a76",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "de4a89eac43d46ba9dd5b6491555c75e",
+          "edgeType": "Branch",
+          "source": "ab0a4dbcd2304688a13989f8974440d8",
+          "target": "ebe7cbc7ba434140a8aebd6fd86ddfeb",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "mode": "query",
+            "value": ""
+          },
+          "label": "Can I see the available pets?"
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "3411369c516e499f8012fb83776fb7a2": {
+      "id": "3411369c516e499f8012fb83776fb7a2",
+      "name": "can_i_see_the_available_pets_",
+      "label": "Can I See The Available Pets?",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyNDY1MTgzNjM5OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    },
+    "8180283ad2ae4706988fea6ee7200a47": {
+      "id": "8180283ad2ae4706988fea6ee7200a47",
+      "name": "yes_sure_why_not_",
+      "label": "Yes Sure Why Not!",
+      "varType": "reference",
+      "table": "x_563993_your_pet_pet",
+      "category": "vaInputs"
+    },
+    "cd4e56225d544697b33f5025d3a86c75": {
+      "id": "cd4e56225d544697b33f5025d3a86c75",
+      "name": "thanks",
+      "label": "Thanks",
+      "varType": "string",
+      "secure": false,
+      "category": "vaInputs",
+      "encryptionHashFunction": "SHA-256",
+      "encryptionSalt": {
+        "value": "MTYyNDY1MTk2NjQ0OCBWQSBEZXNpZ25lciBpcyBhd2Vzb21l",
+        "mode": "simple"
+      }
+    }
+  }
+}</graph><key_phrases>How can PAWPPOINTMENT help you?</key_phrases><library>false</library><live_agent>false</live_agent><name>How can PAWPPOINTMENT help you?</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><roles/><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-06-25 20:08:41</sys_created_on><sys_domain>global</sys_domain><sys_id>5c9afd582f493010df083996f699b666</sys_id><sys_mod_count>3</sys_mod_count><sys_name>How can PAWPPOINTMENT help you?</sys_name><sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package><sys_policy/><sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope><sys_update_name>sys_cb_topic_5c9afd582f493010df083996f699b666</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-06-25 20:16:39</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=5c9afd582f493010df083996f699b666"/></record_update>]]></payload>
+        <payload_hash>-123372703</payload_hash>
+        <record_name>How can PAWPPOINTMENT help you?</record_name>
+        <reverted_from/>
+        <source>2e325d9c2f853010df083996f699b6eb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:16:39</sys_created_on>
+        <sys_id>c56cb91c2f493010df083996f699b61d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a44d137440000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:16:39</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>016cb91cb2493010c99456649678a91d</update_guid>
+        <update_guid_history>016cb91cb2493010c99456649678a91d:-123372703,299bfdd8ce493010a487caa65de0417b:658957719,2f8b71989e493010dfe6f7919a719f19:-251674912,549a35d8e5493010537bbdb72d495b65:1760914092</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 20:18:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>ab8a5f32621c428093d5e43b01a0a240</sys_id>
+        <sys_metadata>5c9afd582f493010df083996f699b666</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>How can PAWPPOINTMENT help you?</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_scope_delete display_value="">b5993c0a2da347cd93d63165f03666e9</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_5c9afd582f493010df083996f699b666</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_5c9afd582f493010df083996f699b666">c56cb91c2f493010df083996f699b61d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 20:18:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
