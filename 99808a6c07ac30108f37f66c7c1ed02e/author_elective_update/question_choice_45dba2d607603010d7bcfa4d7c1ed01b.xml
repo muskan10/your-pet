@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>2</order>
+        <published_ref display_value="Active">523e5e5e07203010d7bcfa4d7c1ed09c</published_ref>
+        <question display_value="Status">89dba2d607603010d7bcfa4d7c1ed013</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 08:20:22</sys_created_on>
+        <sys_id>45dba2d607603010d7bcfa4d7c1ed01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>question_choice_45dba2d607603010d7bcfa4d7c1ed01b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 08:20:22</sys_updated_on>
+        <text>Active</text>
+        <value>active</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=45dba2d607603010d7bcfa4d7c1ed01b"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</application>
+        <file_path/>
+        <instance_id>573b862cdb0a9fcc4c1ff70fbf9619ee</instance_id>
+        <instance_name>dev58847</instance_name>
+        <name>question_choice_45dba2d607603010d7bcfa4d7c1ed01b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>2</order>
+        <published_ref display_value="Active">523e5e5e07203010d7bcfa4d7c1ed09c</published_ref>
+        <question display_value="Status">89dba2d607603010d7bcfa4d7c1ed013</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-07 08:20:22</sys_created_on>
+        <sys_id>45dba2d607603010d7bcfa4d7c1ed01b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_update_name>question_choice_45dba2d607603010d7bcfa4d7c1ed01b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-07 08:20:22</sys_updated_on>
+        <text>Active</text>
+        <value>active</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=45dba2d607603010d7bcfa4d7c1ed01b"/>
+</record_update>]]></payload>
+        <payload_hash>1841866554</payload_hash>
+        <record_name>Active</record_name>
+        <reverted_from/>
+        <source>d7ecdf042f413010df083996f699b63e</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-25 08:40:39</sys_created_on>
+        <sys_id>291d5b442f413010df083996f699b621</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a425400c00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-25 08:40:39</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>e51d5b44d4413010cb514e6d784e8a21</update_guid>
+        <update_guid_history>e51d5b44d4413010cb514e6d784e8a21:1841866554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Active">7e12b7952f013010df083996f699b6fb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-06-29 07:24:54</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0620285a88044670803d7546a17ff544</sys_id>
+        <sys_metadata>45dba2d607603010d7bcfa4d7c1ed01b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Active</sys_name>
+        <sys_package display_value="Your Pet" source="x_563993_your_pet">99808a6c07ac30108f37f66c7c1ed02e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Your Pet">99808a6c07ac30108f37f66c7c1ed02e</sys_scope>
+        <sys_scope_delete display_value="">b5993c0a2da347cd93d63165f03666e9</sys_scope_delete>
+        <sys_update_name>question_choice_45dba2d607603010d7bcfa4d7c1ed01b</sys_update_name>
+        <sys_update_version display_value="question_choice_45dba2d607603010d7bcfa4d7c1ed01b">291d5b442f413010df083996f699b621</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-06-29 07:24:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

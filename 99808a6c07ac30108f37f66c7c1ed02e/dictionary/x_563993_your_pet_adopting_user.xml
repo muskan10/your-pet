@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true" label="Adopting User" max_length="40" name="x_563993_your_pet_adopting_user" sizeclass="6" type="collection">
-        <element label="Address" max_length="100" name="address" type="string"/>
+    <element attributes="live_feed=true" label="Adopting User" max_length="40" name="x_563993_your_pet_adopting_user" sizeclass="4" type="collection">
+        <element label="Address" max_length="100" name="address" type="user_image"/>
         <element label="Age" max_length="40" name="age" type="integer"/>
         <element label="Allowed" max_length="40" name="allowed" type="boolean"/>
         <element label="Choose time and date to schedule meeting" max_length="40" name="choose_time_and_date_to_schedule_meeting" type="calendar_date_time"/>

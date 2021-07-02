@@ -4,7 +4,7 @@
         <hint/>
         <name>Pet</name>
         <order/>
-        <roles>x_563993_your_pet.pet_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-06-01 18:48:11</sys_created_on>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Pet" max_length="40" name="x_563993_your_pet_pet" sizeclass="5" type="collection">
-        <element label="Adoption Center" max_length="32" name="adoption_center" reference="x_563993_your_pet_adoption_center" type="reference"/>
+    <element label="Pet" max_length="40" name="x_563993_your_pet_pet" sizeclass="7" type="collection">
+        <element label="Adoption Center" mandatory="true" max_length="32" name="adoption_center" reference="x_563993_your_pet_adoption_center" type="reference"/>
         <element label="Age" max_length="40" name="age" type="integer"/>
         <element label="Bio" max_length="200" name="bio" type="string"/>
         <element choice="1" label="Breed" max_length="40" name="breed" type="choice">
